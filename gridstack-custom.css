@@ -1,0 +1,47 @@
+/* gridstack-custom.css */
+
+.grid-stack {
+    background: linear-gradient(to right, #ddd 1px, transparent 1px),
+                linear-gradient(to bottom, #ddd 1px, transparent 1px);
+    background-size: 5.88% 4.54%;
+    width: 100%;
+    height: calc(100vh - 20px);
+    padding: 10px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.grid-stack-item-content {
+    border: 2px solid #ccc;
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.grid-stack-item.selected .grid-stack-item-content {
+    border-color: #3498db;
+    background-color: #e0f7ff;
+}
+
+.grid-stack-item.locked .grid-stack-item-content {
+    background-color: lightgrey;
+    border-color: darkgrey;
+}
+
+.grid-stack-item-resizing {
+    border-color: #3498db;
+    z-index: 100;
+}
+
+.grid-stack-item-dragging {
+    border-color: #2ecc71;
+    z-index: 100;
+}
+
+.grid-stack-item {
+    margin: 1px;
+}
